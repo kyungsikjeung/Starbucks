@@ -565,8 +565,12 @@ header .badges .badge {
 .notice .promotion {
     height: 693px;
     background-color: #f6f5ef;
+    overflow: hidden;
     position: relative;
+}
 
+.notice .promotion.hide {
+    height:0;
 }
 
 /* 이미지의 실제 사이즈 기준 가로 819, 세로 553 */
@@ -670,3 +674,4 @@ header .badges .badge {
     background-color: #333;
     color: #fff;
 }
+
