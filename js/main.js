@@ -106,7 +106,8 @@ const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHide = false;
 promotionToggleBtn.addEventListener('click', function () {
-    isHide != isHide;
+    console.log('click')
+    isHide = !isHide;
     if(isHide){
         promotionEl.classList.add('hide');
     }else{
