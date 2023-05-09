@@ -725,6 +725,45 @@ BG-LEFT, BG-RIGHT로 똑같은 배경 색상을 넣은 후에 버튼을 넣어�
   }
   .rewards .btn-group .btn.gift {
     margin-top: 10px;
-    flex-grow: 1;
+    flex-grow: 1; 
+    /* 한쪽 버튼은 두개 영역을 차지하도록 */
   }
 
+  /* Youtube Video */
+.youtube{
+    position: relative;
+    height:700px;
+    background-color: #333;
+    overflow: hidden;
+} 
+
+.youtube .youtube__area{
+    width:1920px;
+    background-color: orange;
+    position: absolute;
+    /* 상위 부모 요소의 가운데 잡힘 */
+    top:50%;
+    /* 왼쪽에 정렬되어 있던것을 오른쪽 정렬로 바꾸고 마진 래프트를 통해 가운데 정렬  */
+    left: 50%;
+    margin-left: calc(1920px/-2);
+    margin-top:calc(1920px*9/16/-2);
+}
+
+.youtube .youtube__area::before{
+    content: "";
+    display: block ;
+    width:100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+
+.youtube .youtube__cover{
+    background-image: url("../images/video_cover_pattern.png");
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
