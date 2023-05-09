@@ -756,9 +756,6 @@ BG-LEFT, BG-RIGHT로 똑같은 배경 색상을 넣은 후에 버튼을 넣어�
     height: 0;
     padding-top: 56.25%;
 }
-.abc{
-    
-}
 
 .youtube .youtube__cover{
     background-image: url("../images/video_cover_pattern.png");
@@ -768,4 +765,12 @@ BG-LEFT, BG-RIGHT로 똑같은 배경 색상을 넣은 후에 버튼을 넣어�
     left:0;
     width:100%;
     height:100%;
+}
+
+#player{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
 }
